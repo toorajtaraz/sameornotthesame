@@ -1,6 +1,4 @@
 from os.path import exists, join
-import json
-from unittest import result
 import numpy as np
 
 
@@ -101,6 +99,3 @@ def load(path):
             test_data_negative.append(extract_array_from_line(data_path, line))
     
     return np.array(train_data_plus), np.array(train_data_negative), np.array(test_data_plus), np.array(test_data_negative)
-
-
-print(load("/home/toorajtaraz/Downloads/project/"))
